@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Nikola Vujičić</title>
+<meta name="description" content="Kontaktiraj me za izradu sajta, web shop, SEO, Google Ads, AI automatizaciju ili hitnu tehničku pomoć.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+<div class="ambient"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orb orb-c"></div><div class="grain"></div></div>
+
+<header class="site-header">
+  <a href="index.html" class="brand"><span class="dot"></span>Nikola Vujičić</a>
+  <nav class="nav-desktop">
+    <ul>
+      <li><a href="index.html" data-i18n="nav.home">Početna</a></li>
+      <li><a href="o-meni.html" data-i18n="nav.about">O meni</a></li>
+      <li><a href="usluge.html" data-i18n="nav.services">Usluge</a></li>
+      <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+      <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+    </ul>
+  </nav>
+  <div class="header-tools">
+    <div class="lang-toggle" data-lang="sr" role="group" aria-label="Language toggle">
+      <button type="button" data-lang-btn="sr" class="active">SR</button>
+      <button type="button" data-lang-btn="en">EN</button>
+      <span class="slider" aria-hidden="true"></span>
+    </div>
+    <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Toggle dark / light mode">
+      <span class="knob">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </span>
+    </button>
+    <button type="button" class="menu-btn" aria-label="Meni"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-drawer">
+  <div class="backdrop"></div>
+  <nav class="panel">
+    <a href="index.html" data-i18n="nav.home">Početna</a>
+    <a href="o-meni.html" data-i18n="nav.about">O meni</a>
+    <a href="usluge.html" data-i18n="nav.services">Usluge</a>
+    <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+  </nav>
+</div>
+
+<main>
+  <section class="section container" style="padding-top:clamp(50px,8vw,90px)">
+    <div class="reveal in" style="max-width:700px">
+      <span class="eyebrow" data-i18n="contact.eyebrow">KONTAKT</span>
+      <h1 style="margin-top:18px" data-i18n="contact.title">Pišimo — bez obzira na to šta ti treba.</h1>
+      <p class="lede" style="margin-top:20px" data-i18n="contact.desc">Trebaš potpuno nov sajt, web shop, hitnu popravku buga, Google Ads kampanju ili samo brz savet? Popuni formu i javljam se u najkraćem roku.</p>
+    </div>
+  </section>
+
+  <section class="section container" style="padding-top:0">
+    <div class="contact-layout">
+      <div class="contact-form glass reveal">
+        <form data-endpoint="https://formspree.io/f/REPLACE_WITH_YOUR_ID">
+          <div class="field">
+            <input type="text" name="name" id="f-name" required placeholder=" ">
+            <label for="f-name" data-i18n="contact.field.name">Ime i prezime</label>
+          </div>
+          <div class="field">
+            <input type="email" name="email" id="f-email" required placeholder=" ">
+            <label for="f-email" data-i18n="contact.field.email">Email adresa</label>
+          </div>
+          <div class="field">
+            <span class="select-label" data-i18n="contact.field.service">Tip usluge</span>
+            <div class="select-wrap">
+              <select name="service" id="f-service">
+                <option value="web" data-i18n="opt.web">Izrada sajta</option>
+                <option value="shop" data-i18n="opt.shop">Web shop / Shopify</option>
+                <option value="seo" data-i18n="opt.seo">SEO optimizacija</option>
+                <option value="ads" data-i18n="opt.ads">Google Ads kampanja</option>
+                <option value="ai" data-i18n="opt.ai">AI automatizacija</option>
+                <option value="fix" data-i18n="opt.fix">Hitna pomoć — bag/greška</option>
+                <option value="maint" data-i18n="opt.maint">Održavanje sajta</option>
+                <option value="other" data-i18n="opt.other">Nešto drugo</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <textarea name="message" id="f-message" required placeholder=" "></textarea>
+            <label for="f-message" data-i18n="contact.field.message">Poruka</label>
+          </div>
+          <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Pošalji poruku</button>
+          <div class="form-status" role="status"></div>
+        </form>
+      </div>
+
+      <div class="contact-side">
+        <div class="glass reveal reveal-delay-1" style="padding:24px 26px">
+          <span class="eyebrow" data-i18n="contact.info.title">Direktan kontakt</span>
+          <div class="info-row" style="padding-left:0; margin-top:18px">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <div>
+              <div class="mono" style="font-size:.74rem; color:var(--text-faint)" data-i18n="contact.info.email.label">Email</div>
+              <div style="margin-top:2px">hello@nikolavujicic.dev</div>
+            </div>
+          </div>
+          <div class="info-row" style="padding-left:0">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c4-4 7-7.5 7-11a7 7 0 1 0-14 0c0 3.5 3 7 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div>
+              <div class="mono" style="font-size:.74rem; color:var(--text-faint)" data-i18n="contact.info.location.label">Lokacija</div>
+              <div style="margin-top:2px" data-i18n="contact.info.location.value">Srbija · Rad na daljinu, klijenti svuda</div>
+            </div>
+          </div>
+          <div class="info-row" style="padding-left:0">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <div>
+              <div class="mono" style="font-size:.74rem; color:var(--text-faint)" data-i18n="contact.info.response.label">Vreme odgovora</div>
+              <div style="margin-top:2px" data-i18n="contact.info.response.value">Obično u roku od 24h</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal reveal reveal-delay-2">
+          <div class="terminal-bar">
+            <span class="tl-dot"></span><span class="tl-dot"></span><span class="tl-dot"></span>
+            <span class="file mono">status.log</span>
+          </div>
+          <div class="terminal-body mono" style="font-size:.85rem">
+            <div class="prompt type-line">inbox --status <span class="out">online</span></div>
+            <div class="prompt type-line" style="margin-top:8px">response_time ~24h</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="brand"><span class="dot"></span>Nikola Vujičić</a>
+      <p class="footer-note" data-i18n="footer.tagline" style="max-width:40ch">Softversko inženjerstvo, digitalni marketing i AI automatizacija — spojeni u jedno.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html" data-i18n="nav.home">Početna</a>
+      <a href="o-meni.html" data-i18n="nav.about">O meni</a>
+      <a href="usluge.html" data-i18n="nav.services">Usluge</a>
+      <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+      <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+  </div>
+  <hr class="divider">
+  <p class="footer-note">© <span id="year"></span> Nikola Vujičić — <span data-i18n="footer.rights">Sva prava zadržana.</span></p>
+</footer>
+
+<script src="js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
